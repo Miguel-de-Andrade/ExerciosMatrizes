@@ -74,9 +74,5 @@ public class Divisao {
 
             System.out.println();
         }
-
-
-
-
     }
 }

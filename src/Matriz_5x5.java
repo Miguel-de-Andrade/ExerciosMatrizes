@@ -6,7 +6,7 @@ public class Matriz_5x5 {
         int[][] A = {
                 {10, 4, 4 , 5 , 3 },
                 {12, 5, 12, 21, 12},
-                {12, 3, 4 , 5 , 5,},
+                {12, 3, 4 , 5 , 5 },
                 {2 , 4, 5 , 3 , 2 },
                 {2 , 7, 7 , 9 , 0 }
 
@@ -55,22 +55,13 @@ public class Matriz_5x5 {
         int[][] subtracao = new int[5][5];
         double[][] divisao = new double[5][5];
 
-        //Calculando a soma
+        //Calculando a soma e a subtração no mesmo laço
 
         for (int i = 0; i < 5; i++) {
 
             for (int j = 0; j < 5; j++) {
 
                 soma[i][j] = A[i][j] + B[i][j];
-            }
-        }
-
-        //Calculando a subtração
-
-        for (int i = 0; i < 5; i++) {
-
-            for (int j = 0; j < 5; j++) {
-
                 subtracao[i][j] = A[i][j] - B[i][j];
             }
         }
@@ -134,7 +125,7 @@ public class Matriz_5x5 {
         for (int i = 0; i < 5; i++) {
 
             for (int j = 0; j < 5; j++) {
-                System.out.printf("%.2f \t ", divisao[i][j]);
+                System.out.printf("%.2f \t", divisao[i][j]);
             }
 
             System.out.println();
