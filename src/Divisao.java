@@ -26,7 +26,7 @@ public class Divisao {
                 if (B[i][j] != 0){
 
                     // Realiza a divisão elemento por elemento
-                    C [i][j] =  A[i][j]/B[i][j];
+                    C [i][j] =  (double)A[i][j]/B[i][j];
 
                 } else{
 
