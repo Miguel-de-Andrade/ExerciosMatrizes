@@ -1,3 +1,5 @@
+package Lista01;
+
 import javax.swing.*;
 
 public class Matriz5x5_Opcoes {
@@ -55,7 +57,7 @@ public class Matriz5x5_Opcoes {
 
         double[][] C = new double[5][5];
 
-        int opc = Integer.parseInt((JOptionPane.showInputDialog("Escolha uma opção:\n1 - Soma\n2 - Subtração\n3 - Divisão")));
+        int opc = Integer.parseInt((JOptionPane.showInputDialog("Escolha uma opção:\n1 - Lista01.Soma\n2 - Subtração\n3 - Divisão")));
 
 
         //Calculando a soma

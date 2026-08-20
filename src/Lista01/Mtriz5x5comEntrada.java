@@ -1,3 +1,5 @@
+package Lista01;
+
 import javax.swing.*;
 
 public class Mtriz5x5comEntrada {
@@ -96,7 +98,7 @@ public class Mtriz5x5comEntrada {
         // Exibindo os resultados:
 
         //Resultado da soma:
-        System.out.println("\nSoma (A + B):\n");
+        System.out.println("\nLista01.Soma (A + B):\n");
 
         for (int i = 0; i < linhas; i++) {
 

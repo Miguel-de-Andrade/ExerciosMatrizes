@@ -1,4 +1,6 @@
-public class Divisao {
+package Lista01;
+
+public class Soma {
     public static void main(String[] args) {
 
         // Declaração da matriz A de ordem 2x2
@@ -17,27 +19,7 @@ public class Divisao {
 
         // Declaração da matriz C que armazenará o resultado
 
-        double [][] C = new double [2][2];
-
-        for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < 2; j++) {
-
-                // Verifica se o divisor é diferente de zero
-                if (B[i][j] != 0){
-
-                    // Realiza a divisão elemento por elemento
-                    C [i][j] =  (double)A[i][j]/B[i][j];
-
-                } else{
-
-                    // Informa que não é possível dividir por zero
-                    System.out.println("Erro: divisão por zero na posição [" + i + "][" + j + "]");
-
-                    return;
-                }
-            }
-
-        }
+        int [][] C = new int [2][2];
 
         // Exibe a matriz A
 
@@ -53,7 +35,7 @@ public class Divisao {
 
         // Exibe a matriz B
 
-        System.out.println("Matriz B");
+        System.out.println("\nMatriz B");
 
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 2; j++) {
@@ -63,16 +45,28 @@ public class Divisao {
             System.out.println();
         }
 
-        // Exibe a matriz C, resultado da divisão
+        // Faz a soma
 
-        System.out.println("\nMatriz C = A / B:");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                C [i][j] = A[i][j] + B [i][j];
+            }
+        }
+        
+        //exibe  matriz C
+
+        System.out.println("\nA soma entre A e B é:");
 
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 2; j++) {
                 System.out.print(C[i][j] + "\t");
+
             }
 
             System.out.println();
+            
         }
+
+
     }
 }
