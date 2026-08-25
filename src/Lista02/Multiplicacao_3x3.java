@@ -29,9 +29,47 @@ public class Multiplicacao_3x3 {
             for (int j = 0; j < 2; j++) {
                 for (int k = 0; k < 4; k++) {
 
+                    C[i][j] += A[i][k] * B[k][j];
                 }
+            }
+        }
+
+        //Exibindo a Matriz A
+
+        System.out.println("\nA matriz A:\n");
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 4; j++) {
+
+                System.out.print(A [i][j] + "\t");
 
             }
+            System.out.println();
+        }
+
+        //Exibindo a matriz B
+
+        System.out.println("\nMatriz B\n");
+
+        for (int i = 0; i < 4 ; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(B[i][j] + "\t");
+            }
+
+            System.out.println();
+        }
+
+        //Exibindo a matriz C (Resultado da multiplicaçaõ)
+
+        System.out.println("\nMatriz resultante de A*B:\n");
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(C[i][j] + "\t");
+
+            }
+
+            System.out.println();
 
         }
 
