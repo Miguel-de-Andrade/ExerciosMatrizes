@@ -1,6 +1,6 @@
 package Lista02;
 
-public class Multiplicacao_3x3 {
+public class MultiplicacaoMatrizes {
     public static void main(String[] args) {
 
         //Declara a matriz A 2x4
@@ -24,9 +24,12 @@ public class Multiplicacao_3x3 {
         int [][] C = new int[2][2];
 
         //Realizando a multiplicação entre as matrizes A e B
+        //Multiplicando linha por coluna
 
         for (int i = 0; i < 2; i++) {
+
             for (int j = 0; j < 2; j++) {
+
                 for (int k = 0; k < 4; k++) {
 
                     C[i][j] += A[i][k] * B[k][j];
@@ -49,7 +52,7 @@ public class Multiplicacao_3x3 {
 
         //Exibindo a matriz B
 
-        System.out.println("\nMatriz B\n");
+        System.out.println("\nMatriz B:\n");
 
         for (int i = 0; i < 4 ; i++) {
             for (int j = 0; j < 2; j++) {
@@ -66,13 +69,10 @@ public class Multiplicacao_3x3 {
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 2; j++) {
                 System.out.print(C[i][j] + "\t");
-
             }
 
             System.out.println();
-
         }
-
 
     }
 }

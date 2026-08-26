@@ -3,7 +3,7 @@ package Lista02;
 public class OperacoesMatriz_3x3 {
     public static void main(String[] args) {
 
-        //Declarando a Matriz A 5x5
+        //Declarando a Matriz A 3x3
 
         int [][] A = {
             {3, 1, 6},
@@ -11,12 +11,12 @@ public class OperacoesMatriz_3x3 {
             {4, 3, 1}
         };
 
-        //Declarando a matriz B 5x5
+        //Declarando a matriz B 3x3
 
         int [][] B = {
                 {1, 5, 4},
-                {1, 2, 6},
-                {9, 1, 3}
+                {2, 1, 6},
+                {9, 1, 8}
         };
 
         //Exibindo a mtriz A
@@ -90,7 +90,7 @@ public class OperacoesMatriz_3x3 {
 
         //Exibindo a soma
 
-        System.out.println("\nResultado da soma entre a matriz A e a B\n");
+        System.out.println("\nResultado da soma entre a matriz A e B:\n");
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -103,7 +103,7 @@ public class OperacoesMatriz_3x3 {
 
         //Exibindo a subtração
 
-        System.out.println("\nResultado da subtração entre a matriz A e a B\n");
+        System.out.println("\nResultado da subtração entre a matriz A e B:\n");
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -116,7 +116,7 @@ public class OperacoesMatriz_3x3 {
 
         //Exibindo a divisão
 
-        System.out.println("\nResultado da divisão entre a matriz A e a B\n");
+        System.out.println("\nResultado da divisão entre a matriz A e B:\n");
 
         for (int i = 0; i < 3; i++) {
 
